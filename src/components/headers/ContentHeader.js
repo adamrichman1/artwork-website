@@ -1,9 +1,9 @@
 import React from "react";
-import {PageHeaderWrapper} from "./style";
+import {ContentHeaderWrapper} from "./style";
 
-const ContentHeader = ({image}) => {
+const ContentHeader = ({text}) => {
     return (
-        <div></div>
+        <ContentHeaderWrapper>{text}</ContentHeaderWrapper>
     )
 };
 

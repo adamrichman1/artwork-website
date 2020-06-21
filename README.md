@@ -1,5 +1,5 @@
 # artwork-website
-A professional website to display artwork
+A professional website to display artwork made by Tyler Torre.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

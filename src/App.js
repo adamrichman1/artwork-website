@@ -7,8 +7,10 @@ import {
     Route
 } from "react-router-dom";
 import Category from "./pages/category";
+import About from "./pages/about";
+import Contact from "./pages/contact";
 
-class Routes extends Component {
+class App extends Component {
   render() {
       return (
         <Router>
@@ -16,11 +18,17 @@ class Routes extends Component {
                 <Route exact path="/" component={HomePage}/>
             </Switch>
             <Switch>
-                <Route exact path="/category/:title" component={Category}/>
+                <Route exact path="/category/:id" component={Category}/>
+            </Switch>
+            <Switch>
+                <Route exact path="/about" component={About}/>
+            </Switch>
+            <Switch>
+                <Route exact path="/contact" component={Contact}/>
             </Switch>
         </Router>
       );
   }
 }
 
-export default Routes;
+export default App;

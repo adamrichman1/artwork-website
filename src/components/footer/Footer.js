@@ -1,33 +1,26 @@
 import React, {Component} from "react";
 import {
     FooterWrapper,
-    FooterTitle,
-    FooterContact,
-    FooterSocialMedia,
-    FooterSocialMediaWrapper,
-    FooterCopyright
+    Title,
+    Contact,
+    Copyright,
+    ContactWrapper
 } from "./styles";
 
 class Footer extends Component {
     render() {
         return (
             <FooterWrapper>
-                <FooterTitle>C O N T A CT</FooterTitle>
-                {this.props.contact.map(({key, value}) => {
-                   return (
-                       <FooterContact>{key}: {value}</FooterContact>
-                   )
-                })}
-                <FooterSocialMediaWrapper>
-                {this.props.socialMedia.map(({name, url}, index) => {
+                <Title>C O N T A CT</Title>
+                {this.props.contact.map(({name, url}, index) => {
                     return (
-                        (index === this.props.socialMedia.length-1) ?
-                            <FooterSocialMedia href={url}>{name}</FooterSocialMedia> :
-                            <FooterSocialMedia href={url}>{name} | </FooterSocialMedia>
+                        <ContactWrapper>
+                            <Contact href={url}>{name}</Contact>
+                            {(index !== this.props.contact.length-1) ? <Contact> | </Contact> : null}
+                        </ContactWrapper>
                     )
                 })}
-                </FooterSocialMediaWrapper>
-                <FooterCopyright>© 2020 by Tyler Torre</FooterCopyright>
+                <Copyright>© 2020 by Tyler Torre</Copyright>
             </FooterWrapper>
         )
     }

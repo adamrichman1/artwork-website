@@ -12,9 +12,13 @@ export const ImageOverlay = styled.div`
   text-align: center;
   font-size: 80px;
   line-height: 41rem;
+  
   &:hover {
     color: white;
     background-color: rgba(0, 0, 0, 0.6);
+  }
+  @media (max-width: 425px) {
+    line-height: 25rem;
   }
 `;
 

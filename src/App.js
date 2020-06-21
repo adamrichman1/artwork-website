@@ -1,15 +1,13 @@
 import React, {Component} from 'react';
 import HomePage from './pages/index';
+import Category from "./pages/category";
+import About from "./pages/about";
 import './App.css';
 import {
     BrowserRouter as Router,
     Switch,
     Route
 } from "react-router-dom";
-import Category from "./pages/category";
-import About from "./pages/about";
-import Contact from "./pages/contact";
-
 class App extends Component {
   render() {
       return (
@@ -22,9 +20,6 @@ class App extends Component {
             </Switch>
             <Switch>
                 <Route exact path="/about" component={About}/>
-            </Switch>
-            <Switch>
-                <Route exact path="/contact" component={Contact}/>
             </Switch>
         </Router>
       );

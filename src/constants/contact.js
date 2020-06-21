@@ -1,13 +1,23 @@
 export default [
     {
-        "key": "Email",
-        "value": "torret2@tcnj.edu"
+        "name": "Email",
+        "url": "mailto:torret2@tcnj.edu"
     },
     {
-        "key": "Phone",
-        "value": "917-968-4024"
-    },    {
-        "key": "Location",
-        "value": "Ewing, NJ"
+        "name": "Phone",
+        "url": "tel:9179684024"
+    },
+    {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/tylerart5/"
+    },
+    {
+        "name": "Twitter",
+        "url": "https://twitter.com/tyler_torre"
+    },
+    {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/tyler.torre.1"
     }
+
 ]

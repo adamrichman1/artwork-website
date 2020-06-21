@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
 import {NavLink} from "./style";
-import {Link} from "react-router-dom";
+import {animateScroll} from 'react-scroll'
 
 class NavBarElement extends Component {
     render() {
         return (
-            <Link to={`/${this.props.id}`}>
-                <NavLink>{this.props.title}</NavLink>
-            </Link>
+            <NavLink onClick={scrollToBottom}>{this.props.title}</NavLink>
         )
     }
 }
+
+const scrollToBottom = () => {animateScroll.scrollToBottom()};
 
 export default NavBarElement;

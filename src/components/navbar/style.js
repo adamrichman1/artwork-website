@@ -8,7 +8,7 @@ export const Layout = styled.div`
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 `;
 
 export const DropDownWrapper = styled.div`
@@ -23,6 +23,10 @@ export const DropDown = styled.div`
     top: 1.3rem;
     right: .39rem;
     border: 1px solid #ffffff;
+    
+    @media (max-width: 425px) {
+        top: 1.15rem;
+    }
 `;
 
 export const DropDownOption = styled.div`
@@ -52,6 +56,7 @@ export const Title = styled.div`
     
     @media (max-width: 425px) {
         font-size: 12px;
+        visibility: hidden;
     }
 `;
 
@@ -67,5 +72,4 @@ export const NavLink = styled.div`
     &:hover {
         color: yellow;
     }
-    z-index: 1;
 `;

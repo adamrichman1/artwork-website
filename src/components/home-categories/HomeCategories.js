@@ -1,7 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import {Grid, GridWrapper} from "./style";
-import ImageLink from "../image-link/ImageLink";
+import {Grid, GridWrapper, Image, ImageContainer, ImageOverlay} from "./style";
 
 const HomeCategories = ({ artCategories }) => {
     return (
@@ -19,5 +18,13 @@ const HomeCategories = ({ artCategories }) => {
     );
 };
 
+const ImageLink = ({image, title}) => {
+    return(
+        <ImageContainer>
+            <Image src={image} alt={title}/>
+            <ImageOverlay>{title}</ImageOverlay>
+        </ImageContainer>
+    )
+};
 
 export default HomeCategories;

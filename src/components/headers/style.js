@@ -34,6 +34,7 @@ export const CategoryHeaderContent = styled.div`
 
 export const CategoryHeaderWrapper = styled.div`
     position: relative;
+    overflow-x: hidden;
 `;
 
 export const SlidingHeader = styled.div`

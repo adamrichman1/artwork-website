@@ -7,17 +7,17 @@ import pages from "../constants/pages";
 import artCategories from "../constants/art-categories";
 import ContentHeader from "../components/headers/ContentHeader";
 import CategoryHeader from "../components/headers/CategoryHeader";
-import './category.css'
 import Footer from "../components/footer/Footer";
 import contact from "../constants/contact";
 import digital from "../constants/digital";
 import design from "../constants/design";
 import photomontage from "../constants/photomontage";
+import './overflow.css'
 
 const Category = () => {
     let data = getContent(useParams());
     return (
-        <div className={"category"}>
+        <div className={"overflow"}>
             <NavBar pageLinks={pages} artCategories={artCategories}/>
             <CategoryHeader title = {data.pageHeader} image={data.banner}/>
             <ContentHeader contentHeader={data.contentHeader}/>

@@ -7,11 +7,11 @@ import ContentHeader from "../components/headers/ContentHeader";
 import pages from '../constants/pages'
 import Footer from "../components/footer/Footer";
 import contact from "../constants/contact";
-import "./index.css"
+import "./overflow.css"
 
 const HomePage = () => {
     return (
-        <div className={"index"}>
+        <div className={"overflow"}>
             <meta name="viewport" content="width=device-width"/>
             <NavBar pageLinks={pages} artCategories={artCategories}/>
             <PageHeader image={"/banners/beach-banner.png"}/>

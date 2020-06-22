@@ -14,7 +14,7 @@ const HomePage = () => {
         <div className={"index"}>
             <meta name="viewport" content="width=device-width"/>
             <NavBar pageLinks={pages} artCategories={artCategories}/>
-            <PageHeader image={"/headers/beach-banner.png"}/>
+            <PageHeader image={"/banners/beach-banner.png"}/>
             <ContentHeader contentHeader={{"title": "", "description": "Check out my work ↓"}}/>
             <HomeCategories artCategories={artCategories}/>
             <Footer contact={contact}/>

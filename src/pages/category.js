@@ -11,6 +11,7 @@ import './category.css'
 import Footer from "../components/footer/Footer";
 import contact from "../constants/contact";
 import digital from "../constants/digital";
+import design from "../constants/design";
 
 const Category = () => {
     let data = getContent(useParams());
@@ -31,6 +32,8 @@ const getContent = ({id}) => {
             return handDrawn;
         case "digital":
             return digital;
+        case "design":
+            return design;
         default:
             return null;
     }

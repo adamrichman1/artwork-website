@@ -1,6 +1,6 @@
 export default
 {
-    "banner": "/headers/digital-banner.jpg",
+    "banner": "/banners/digital-banner.jpg",
     "pageHeader": "Digital",
     "contentHeader": {
         "title": "I used Adobe Photoshop, Illustrator, and Indesgin learning to be a graphic designer and now one of my go to ways of image making.",

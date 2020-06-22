@@ -1,6 +1,6 @@
 export default
 {
-    "banner": "/headers/hand-drawn-banner.jpg",
+    "banner": "/banners/hand-drawn-banner.jpg",
     "pageHeader": "Hand Drawn",
     "contentHeader": {
         "title": "I usually start most of my works as hand made drawing and was my main meduim before I starting doing digital Graphic Design work.",

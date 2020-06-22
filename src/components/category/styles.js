@@ -42,6 +42,6 @@ export const GridWrapper = styled.section`
     display: flex;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
-    background-image: url("/double-bubble-dark.png");
+    background-image: url("/backgrounds/double-bubble-dark.png");
     background-color: #003366;
 `;

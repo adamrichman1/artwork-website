@@ -1,10 +1,25 @@
 import styled from '@emotion/styled'
 
-export const HeaderImage = styled.img`
+export const HomeHeaderImage = styled.img`
     display: block;
     width: 100%;
-    height: auto;
+    max-height: 30rem;
     border-bottom: 1px solid white;
+    background-color: #003366;
+`;
+
+export const AboutHeaderImage = styled.img`
+    position: absolute;
+    bottom: -4rem;
+    right: 3%;
+    width: 100%;
+`;
+
+export const AboutHeaderImageWrapper = styled.div`
+    position: relative;
+    background-color: #003366;
+    width: 100%;
+    height: 20rem;
 `;
 
 export const CategoryHeaderContent = styled.div`

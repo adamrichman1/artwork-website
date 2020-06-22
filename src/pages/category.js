@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {useParams} from 'react-router-dom';
 import ArtCategory from "../components/category/ArtCategory";
 import handDrawn from '../constants/hand-drawn';
@@ -13,11 +13,18 @@ import digital from "../constants/digital";
 import design from "../constants/design";
 import photomontage from "../constants/photomontage";
 import './overflow.css'
+import Properties from "../components/properties/properties";
 
-const Category = () => {
+function Category() {
     let data = getContent(useParams());
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
+
     return (
         <div className={"overflow"}>
+            <Properties/>
             <NavBar pageLinks={pages} artCategories={artCategories}/>
             <CategoryHeader title = {data.pageHeader} image={data.banner}/>
             <ContentHeader contentHeader={data.contentHeader}/>
@@ -25,7 +32,7 @@ const Category = () => {
             <Footer contact={contact}/>
         </div>
     );
-};
+}
 
 const getContent = ({id}) => {
     switch (id) {

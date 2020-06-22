@@ -1,24 +1,29 @@
-import React from "react";
+import React, {useEffect} from "react";
 import HomeCategories from "../components/home-categories/HomeCategories";
 import artCategories from '../constants/art-categories';
-import PageHeader from '../components/headers/PageHeader';
+import HomeHeader from '../components/headers/HomeHeader';
 import NavBar from "../components/navbar/NavBar";
 import ContentHeader from "../components/headers/ContentHeader";
 import pages from '../constants/pages'
 import Footer from "../components/footer/Footer";
 import contact from "../constants/contact";
 import "./overflow.css"
+import Properties from "../components/properties/properties";
 
-const HomePage = () => {
+function HomePage() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
     return (
         <div className={"overflow"}>
-            <meta name="viewport" content="width=device-width"/>
+            <Properties/>
             <NavBar pageLinks={pages} artCategories={artCategories}/>
-            <PageHeader image={"/banners/beach-banner.png"}/>
+            <HomeHeader image={"/banners/beach-banner.png"}/>
             <ContentHeader contentHeader={{"title": "", "description": "Check out my work ↓"}}/>
             <HomeCategories artCategories={artCategories}/>
             <Footer contact={contact}/>
         </div>
     )
-};
+}
+
 export default HomePage;

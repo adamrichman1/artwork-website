@@ -22,4 +22,6 @@ export const GridWrapper = styled.section`
     border-bottom: 1px solid white;
     background-image: url("/backgrounds/double-bubble-dark.png");
     background-color: #003366;
+    padding-left: 2rem;
+    padding-right: 2rem;
 `;

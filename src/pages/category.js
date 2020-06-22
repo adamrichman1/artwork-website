@@ -10,19 +10,30 @@ import CategoryHeader from "../components/headers/CategoryHeader";
 import './category.css'
 import Footer from "../components/footer/Footer";
 import contact from "../constants/contact";
+import digital from "../constants/digital";
 
 const Category = () => {
-    let {id} = useParams();
+    let data = getContent(useParams());
     return (
         <div className={"category"}>
             <NavBar pageLinks={pages} artCategories={artCategories}/>
-            <CategoryHeader title = {id} image={"/headers/hand-drawn.jpg"}/>
-            <ContentHeader contentHeader={handDrawn.contentHeader}/>
-            <ArtCategory images={handDrawn.images}/>
+            <CategoryHeader title = {data.pageHeader} image={data.banner}/>
+            <ContentHeader contentHeader={data.contentHeader}/>
+            <ArtCategory images={data.images}/>
             <Footer contact={contact}/>
         </div>
     );
 };
 
+const getContent = ({id}) => {
+    switch (id) {
+        case "hand-drawn":
+            return handDrawn;
+        case "digital":
+            return digital;
+        default:
+            return null;
+    }
+};
 
 export default Category;

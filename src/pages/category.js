@@ -12,6 +12,7 @@ import Footer from "../components/footer/Footer";
 import contact from "../constants/contact";
 import digital from "../constants/digital";
 import design from "../constants/design";
+import photomontage from "../constants/photomontage";
 
 const Category = () => {
     let data = getContent(useParams());
@@ -34,6 +35,8 @@ const getContent = ({id}) => {
             return digital;
         case "design":
             return design;
+        case "photomontage":
+            return photomontage;
         default:
             return null;
     }

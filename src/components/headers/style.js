@@ -4,8 +4,7 @@ export const HomeHeaderImage = styled.img`
     display: block;
     width: 100%;
     max-height: 30rem;
-    border-bottom: 1px solid white;
-    background-color: #003366;
+    border-bottom: 1px solid #303030;
 `;
 
 export const AboutHeaderImage = styled.img`
@@ -13,33 +12,47 @@ export const AboutHeaderImage = styled.img`
     bottom: -4rem;
     right: 3%;
     width: 100%;
+    @media (max-width: 425px) {
+        bottom: 10%;
+    }
 `;
 
 export const AboutHeaderImageWrapper = styled.div`
     position: relative;
-    background-color: #003366;
+    background-color: #dfdfe5;
+    border-bottom: 1px solid #303030;
     width: 100%;
     height: 20rem;
+    @media (max-width: 425px) {
+        height: 10rem;
+    }
 `;
 
 export const CategoryHeaderContent = styled.div`
     position: absolute;
-    top: 45%;
-    left: 45%;
-    color: white;
+    color: #F8F8FF;
     font-weight: bold;
     font-size: 46px;
     z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 28rem;
+    width: 100%;
+    height: 100%;
+    @media (max-width: 425px) {
+        line-height: 24rem;
+    }
 `;
 
 export const CategoryHeaderWrapper = styled.div`
     position: relative;
     overflow-x: hidden;
+    width: 100%;
 `;
 
 export const SlidingHeader = styled.div`
     background: repeat-x;
-    height: 100%;
     width: 5076px;
     animation: slide 60s linear infinite;
     position: relative;
@@ -58,16 +71,16 @@ export const SlidingHeader = styled.div`
 export const ContentHeaderCTA = styled.div`
     font-size: 26px;
     font-weight: bold;
-    color: white;
+    color: #303030;
     line-height: 10rem;
     
     @media (max-width: 425px) {
+        line-height: 7rem;
         font-size: 24px;
     }
 `;
 
 export const ContentHeaderWrapper = styled.div`
-    background-color: #003366;
     height: 12rem;
     width: 100%;
     text-align: center;
@@ -78,7 +91,7 @@ export const ContentHeaderWrapper = styled.div`
 export const ContentHeaderDescription = styled.div`
     padding-top: 1rem;
     position: relative;
-    color: white;
+    color: #303030;
     font-size: 28px;
     font-weight: bold;
     text-align: center;
@@ -87,6 +100,8 @@ export const ContentHeaderDescription = styled.div`
     margin: auto;
 
     @media (max-width: 425px) {
-        line-height: 8rem;
+        padding-top: 2rem;
+        line-height: 1rem;
+        font-size: 15px;
     }
 `;

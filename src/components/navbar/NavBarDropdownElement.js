@@ -30,15 +30,16 @@ class NavBarDropdownElement extends Component {
 }
 
 const DropDownMenu = ({toggled, artCategories}) => {
+    console.log(artCategories);
     if (toggled) {
         return (
             <DropDownWrapper>
                 <DropDown>
                     {artCategories.map(({title, id}) => {
                         return (
-                            <DropDownOption>
-                                <Link to={`/category/${id}`} className={"link"}>{title}</Link>
-                            </DropDownOption>
+                            <Link to={`/category/${id}`} className={"link"}>
+                                <DropDownOption>{title}</DropDownOption>
+                            </Link>
                         )
                     })}
                 </DropDown>

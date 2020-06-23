@@ -8,7 +8,6 @@ import contact from "../constants/contact";
 import Properties from "../components/properties/properties";
 import Bio from "../components/bio/bio";
 import bio from '../constants/bio'
-import AboutHeader from "../components/headers/AboutHeader";
 
 function About() {
 
@@ -20,7 +19,6 @@ function About() {
         <div className={"overflow"}>
             <Properties/>
             <NavBar pageLinks={pages} artCategories={artCategories}/>
-            <AboutHeader image={"/banners/name-banner.png"}/>
             <Bio bio={bio}/>
             <Footer contact={contact}/>
         </div>

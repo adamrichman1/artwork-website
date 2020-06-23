@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,500');
+
+.overflow {
+    font-family: 'Quicksand', sans-serif;
+    color: #303030;
+    background-color: #F8F8FF;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
 @media (max-width: 425px) {
     .overflow {
         overflow-x: hidden;

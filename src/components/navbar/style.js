@@ -2,13 +2,13 @@ import styled from "@emotion/styled";
 
 export const Layout = styled.div`
     width: 100%;
-    background-color: #003366;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #303030;
+    background-color: #F8F8FF;
     height: 4rem;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    z-index: 2;
+    z-index: 3;
 `;
 
 export const DropDownWrapper = styled.div`
@@ -20,34 +20,33 @@ export const DropDownWrapper = styled.div`
 export const DropDown = styled.div`
     position: relative;
     top: 100%;
-    top: 1.3rem;
+    top: 1.2rem;
     right: .39rem;
     border: 1px solid #ffffff;
     
     @media (max-width: 425px) {
-        top: 1.15rem;
+        top: 1.4rem;
+        right: .2rem;
     }
 `;
 
 export const DropDownOption = styled.div`
     font-size: 12px;
     position: relative;
-    background-color: #003366;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #F8F8FF;
     text-align: center;
     line-height: 2rem;
     height: 2rem;
     min-width: 6rem;
-    z-index: 1;
     &:hover {
-        background-color: #00264d;
+        background-color: #adadb2;
+        color: white;
     }
 `;
 
 export const Title = styled.div`
     display: inline-block;
     position: absolute;
-    color: white;
     font-size: 25px;
     font-weight: bold;
     padding: 1.1rem;
@@ -64,12 +63,15 @@ export const NavLink = styled.div`
     position: relative;
     float: right;
     display: inline-block;
-    color: white;
     padding-top: 1.4rem;
     padding-right: 2rem;
     font-size: 18px;
     cursor: pointer;
+    color: #303030;
     &:hover {
-        color: yellow;
+        color: blue;
+    }
+    @media (max-width: 425px) {
+        font-size: 16px;
     }
 `;

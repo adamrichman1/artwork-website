@@ -9,12 +9,7 @@ export const ImageOverlay = styled.div`
     transition: .4s ease;
     background-color: rgba(0, 0, 0, 0);
     color: transparent;
-    cursor: pointer;
     border-radius: 20px;
-
-    &:hover {
-        background-color: rgba(0, 0, 0, 0.6);
-    }
 `;
 
 export const Image = styled.img`
@@ -22,8 +17,7 @@ export const Image = styled.img`
     width: 100%;
     border-radius: 20px;
     @media (max-width: 425px) {
-        width: 25rem;
-        height: 25rem;
+        width: 100%;
     }
 `;
 
@@ -36,12 +30,21 @@ export const Column = styled.div`
     flex: 33%;
     max-width: 33%;
     padding: 1rem;
+    
+    @media (max-width: 425px) {
+        padding: 0;
+        max-width: 100%;
+    }
 `;
 
 export const GridWrapper = styled.section`
     display: flex;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    background-image: url("/backgrounds/double-bubble-dark.png");
-    background-color: #003366;
+    border-bottom: 1px solid #303030;
+    background-color: #dfdfe5;
+    padding-left: 1rem;
+    padding-right: 1rem;   
+    @media (max-width: 425px) {
+        padding-top: 1rem;
+        display: inline-block;
+    }
 `;

@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 
 export const FooterWrapper = styled.div`
-    background-color: #003366;
+    background-color: #F8F8FF;
     height: 11rem;
     width: 100%;
     position: relative;
@@ -11,7 +11,7 @@ export const FooterWrapper = styled.div`
 export const Title = styled.div`
     font-size: 40px;
     font-weight: bold;
-    color: white;
+    color: #303030;
     text-align: center;
     padding-top: 1.5rem;
     padding-bottom: 2rem;
@@ -20,10 +20,10 @@ export const Title = styled.div`
 
 export const Contact = styled.a`
     font-size: 15px;
-    color: white;
+    color: #303030;
     text-decoration: none;
     &:hover {
-        color: yellow;
+        color: blue;
     }
 `;
 
@@ -35,6 +35,6 @@ export const Copyright = styled.div`
     padding-top: 1rem;
     font-weight: bold;
     font-size: 9px;
-    color: white;
+    color: #303030;
     text-align: center;
 `;

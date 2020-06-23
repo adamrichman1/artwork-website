@@ -18,12 +18,15 @@ export const Grid = styled.div`
 export const GridWrapper = styled.section`
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    background-image: url("/backgrounds/double-bubble-dark.png");
-    background-color: #003366;
+    border-bottom: 1px solid #303030;
+    background-color: #dfdfe5;
     padding-left: 2rem;
     padding-right: 2rem;
+    
+    @media (max-width: 425px) {
+        padding-right: 0rem;
+        padding-left: 0rem;
+    }
 `;
 
 export const ImageOverlay = styled.div`
@@ -45,19 +48,22 @@ export const ImageOverlay = styled.div`
       background-color: rgba(0, 0, 0, 0.6);
     }
     @media (max-width: 425px) {
-      line-height: 25rem;
+        line-height: 20rem;
+        &:hover {
+            font-size: 40px;
+            color: white;
+        }
     }
 `;
 
 export const Image = styled.img`
-    border: 1px solid white;
     height: 41rem;
     width: 41rem;
     border-radius: 20px;
     
     @media (max-width: 425px) {
-        width: 25rem;
-        height: 25rem;
+        width: 22rem;
+        height: 22rem;
     }
 `;
 

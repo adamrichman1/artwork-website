@@ -52,12 +52,11 @@ export const Title = styled.div`
     position: absolute;
     font-size: 25px;
     font-weight: bold;
-    padding: 1.1rem;
+    padding: 1rem;
     padding-left: 26px;
     float: left;
     
     @media (max-width: 425px) {
-        font-size: 12px;
         visibility: hidden;
     }
 `;

@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 
 export const FooterWrapper = styled.div`
     background-color: #F8F8FF;
-    height: 11rem;
+    height: 10rem;
     width: 100%;
     position: relative;
     text-align: center;
@@ -14,7 +14,7 @@ export const Title = styled.div`
     color: #303030;
     text-align: center;
     padding-top: 1.5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     position: relative;
 `;
 

@@ -8,13 +8,13 @@ class NavBar extends Component {
     render() {
         return (
             <Layout>
-                <Title>GRAPHIC DESIGNER · ARTIST</Title>
+                <Title>Graphic Designer · Artist</Title>
                 <NavLinkContainer>
                 {this.props.pageLinks.map(({title, id}) => {
-                    if (title === "WORK") {
+                    if (title === "Work") {
                         return <NavBarDropdownElement title={title} artCategories={this.props.artCategories}/>
                     }
-                    else if (title === "CONTACT") {
+                    else if (title === "Contact") {
                         return <NavBarScrollElement title={title}/>
                     }
                     else {

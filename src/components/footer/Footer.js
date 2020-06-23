@@ -11,7 +11,7 @@ class Footer extends Component {
     render() {
         return (
             <FooterWrapper>
-                <Title>C O N T A C T</Title>
+                <Title>Contact</Title>
                 {this.props.contact.map(({name, url}, index) => {
                     return (
                         <ContactWrapper>

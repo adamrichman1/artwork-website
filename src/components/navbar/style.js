@@ -24,12 +24,12 @@ export const DropDown = styled.div`
     position: relative;
     top: 100%;
     top: 1.2rem;
-    right: 1.3rem;
+    right: 1.7rem;
     border: 1px solid #303030;
     
     @media (max-width: 425px) {
         top: 1.4rem;
-        right: 1.4rem;
+        right: 1.8rem;
     }
 `;
 

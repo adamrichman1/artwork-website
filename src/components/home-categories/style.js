@@ -47,7 +47,7 @@ export const ImageOverlay = styled.div`
       background-color: rgba(0, 0, 0, 0.6);
     }
     @media (max-width: 425px) {
-      line-height: 20rem;
+      line-height: 21rem;
       font-size: 40px;
       color: white;
       font-weight: bold;

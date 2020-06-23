@@ -32,7 +32,7 @@ export const ImageOverlay = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 99.5%;
     width: 100%;
     transition: .4s ease;
     background-color: rgba(0, 0, 0, 0);
@@ -41,12 +41,13 @@ export const ImageOverlay = styled.div`
     font-size: 80px;
     line-height: 41rem;
     border-radius: 20px;
-  
+    
     &:hover {
       color: white;
       background-color: rgba(0, 0, 0, 0.6);
     }
     @media (max-width: 425px) {
+      height: 99%;
       line-height: 21rem;
       font-size: 40px;
       color: white;

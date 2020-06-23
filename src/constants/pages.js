@@ -1,19 +1,19 @@
 export default
   [
       {
-          "title": "CONTACT",
-          "id": "contact"
-      },
-      {
-          "title": "ABOUT",
-          "id": "about"
+          "title": "HOME",
+          "id": ""
       },
       {
           "title": "WORK",
           "id": ""
       },
       {
-          "title": "HOME",
-          "id": ""
+          "title": "ABOUT",
+          "id": "about"
+      },
+      {
+          "title": "CONTACT",
+          "id": "contact"
       }
   ]

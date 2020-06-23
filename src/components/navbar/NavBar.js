@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Layout, Title} from "./style";
+import {Layout, NavLinkContainer, Title} from "./style";
 import NavBarDropdownElement from "./NavBarDropdownElement";
 import NavBarLinkElement from "./NavBarLinkElement";
 import NavBarScrollElement from "./NavBarScrollElement";
@@ -9,6 +9,7 @@ class NavBar extends Component {
         return (
             <Layout>
                 <Title>GRAPHIC DESIGNER · ARTIST</Title>
+                <NavLinkContainer>
                 {this.props.pageLinks.map(({title, id}) => {
                     if (title === "WORK") {
                         return <NavBarDropdownElement title={title} artCategories={this.props.artCategories}/>
@@ -20,6 +21,7 @@ class NavBar extends Component {
                         return <NavBarLinkElement title={title} id={id}/>;
                     }
                 })}
+                </NavLinkContainer>
             </Layout>
         )
     }

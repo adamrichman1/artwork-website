@@ -9,24 +9,27 @@ export const Layout = styled.div`
     position: -webkit-sticky;
     top: 0;
     z-index: 3;
+    
+    @media (max-width: 425px) {
+        text-align: center;
+    }
 `;
 
 export const DropDownWrapper = styled.div`
     position: absolute;
     top: 100%;
-    right: .2rem;
 `;
 
 export const DropDown = styled.div`
     position: relative;
     top: 100%;
     top: 1.2rem;
-    right: .39rem;
+    right: 1.3rem;
     border: 1px solid #303030;
     
     @media (max-width: 425px) {
         top: 1.4rem;
-        right: .2rem;
+        right: 1.4rem;
     }
 `;
 
@@ -59,9 +62,15 @@ export const Title = styled.div`
     }
 `;
 
+export const NavLinkContainer = styled.div`
+    float: right;
+    @media (max-width: 425px) {
+        float: none;
+    }
+`;
+
 export const NavLink = styled.div`
     position: relative;
-    float: right;
     display: inline-block;
     padding-top: 1.4rem;
     padding-right: 2rem;
@@ -73,5 +82,7 @@ export const NavLink = styled.div`
     }
     @media (max-width: 425px) {
         font-size: 16px;
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
 `;

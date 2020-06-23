@@ -45,9 +45,12 @@ class ImageLink extends Component {
 
     render() {
         return (
-            <ImageContainer>
+            <ImageContainer onClick={this.toggleDropdownTrue}>
                 <Image src={this.props.image} alt={this.props.title}/>
                 <ImageOverlay/>
+                {(this.state.toggled) ?
+                    <Modal image={this.props.image} title={this.props.title} closeModal={this.toggleDropdownFalse.bind(this)}/> : null
+                }
             </ImageContainer>
         )
     }

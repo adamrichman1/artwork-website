@@ -9,7 +9,12 @@ export const ImageOverlay = styled.div`
     transition: .4s ease;
     background-color: rgba(0, 0, 0, 0);
     color: transparent;
+    cursor: pointer;
     border-radius: 20px;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
 `;
 
 export const Image = styled.img`

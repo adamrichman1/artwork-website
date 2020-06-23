@@ -3,7 +3,7 @@ export default
     "banner": "/banners/digital-banner.jpg",
     "pageHeader": "Digital",
     "contentHeader": {
-        "title": "I used Adobe Photoshop, Illustrator, and Indesgin learning to be a graphic designer and now one of my go to ways of image making.",
+        "title": "I used software such as Adobe Photoshop, Illustrator, and InDesign while learning graphic design and it is now one of my go to ways of image making.",
         "description": "Take a look ↓"
     },
     "images": [

@@ -40,7 +40,6 @@ export const Column = styled.div`
 export const GridWrapper = styled.section`
     display: flex;
     border-bottom: 1px solid #303030;
-    background-color: #dfdfe5;
     padding-left: 1rem;
     padding-right: 1rem;   
     @media (max-width: 425px) {

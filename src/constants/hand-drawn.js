@@ -3,7 +3,7 @@ export default
     "banner": "/banners/hand-drawn-banner.jpg",
     "pageHeader": "Hand Drawn",
     "contentHeader": {
-        "title": "I usually start most of my works as hand made drawing and was my main meduim before I starting doing digital Graphic Design work.",
+        "title": "I usually start most of my work as hand made drawings, as it was my main medium before I started doing digital graphic design work.",
         "description": "Take a look ↓"
     },
     "images": [

@@ -3,7 +3,7 @@ export default
     "banner": "/banners/design-banner.jpg",
     "pageHeader": "Design",
     "contentHeader": {
-        "title": "I used Adobe Photoshop, Illustrator, and Indesgin learning to be a graphic designer and now it's my go to way when making design-based work.",
+        "title": "I learned to use Adobe Photoshop, Illustrator, and InDesign for graphic design and now they are my go-to method for design-based work.",
         "description": "Take a look ↓"
     },
     "images": [

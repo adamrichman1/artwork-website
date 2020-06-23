@@ -3,7 +3,6 @@ import HomeCategories from "../components/home-categories/HomeCategories";
 import artCategories from '../constants/art-categories';
 import HomeHeader from '../components/headers/HomeHeader';
 import NavBar from "../components/navbar/NavBar";
-import ContentHeader from "../components/headers/ContentHeader";
 import pages from '../constants/pages'
 import Footer from "../components/footer/Footer";
 import contact from "../constants/contact";
@@ -19,7 +18,6 @@ function HomePage() {
             <Properties/>
             <NavBar pageLinks={pages} artCategories={artCategories}/>
             <HomeHeader image={"/banners/beach-banner.png"}/>
-            <ContentHeader contentHeader={{"title": "", "description": "Check out my work ↓"}}/>
             <HomeCategories artCategories={artCategories}/>
             <Footer contact={contact}/>
         </div>

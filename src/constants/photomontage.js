@@ -3,7 +3,7 @@ export default
     "banner": "/banners/photomontage-banner.jpg",
     "pageHeader": "Photomontage",
     "contentHeader": {
-        "title": "For this kind of work, I would take photos and combine them in Photoshop to create completely new creative works of art.",
+        "title": "For this kind of work, I take photos and combine them in Photoshop to create completely new forms of art.",
         "description": "Take a look ↓"
     },
     "images": [

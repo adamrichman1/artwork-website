@@ -19,7 +19,6 @@ export const GridWrapper = styled.section`
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid #303030;
-    background-color: #dfdfe5;
     padding-left: 2rem;
     padding-right: 2rem;
     
@@ -48,11 +47,11 @@ export const ImageOverlay = styled.div`
       background-color: rgba(0, 0, 0, 0.6);
     }
     @media (max-width: 425px) {
-        line-height: 20rem;
-        &:hover {
-            font-size: 40px;
-            color: white;
-        }
+      line-height: 20rem;
+      font-size: 40px;
+      color: white;
+      font-weight: bold;
+      background-color: rgba(0, 0, 0, 0.4);        
     }
 `;
 

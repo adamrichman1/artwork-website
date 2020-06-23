@@ -22,7 +22,7 @@ export const DropDown = styled.div`
     top: 100%;
     top: 1.2rem;
     right: .39rem;
-    border: 1px solid #ffffff;
+    border: 1px solid #303030;
     
     @media (max-width: 425px) {
         top: 1.4rem;

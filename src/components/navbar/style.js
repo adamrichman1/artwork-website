@@ -29,7 +29,7 @@ export const DropDown = styled.div`
     
     @media (max-width: 425px) {
         top: 1.4rem;
-        right: 1.8rem;
+        right: 1.9rem;
     }
 `;
 

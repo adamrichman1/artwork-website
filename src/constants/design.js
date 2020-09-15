@@ -22,7 +22,7 @@ export default
             },
             {
                 "image": "/design/fult-tilt-jacket-.jpg",
-                "title": "Fult Title Jacket"
+                "title": "Full Title Jacket"
             },
             {
                 "image": "/design/Avenir-history.jpg",
@@ -31,7 +31,7 @@ export default
         ],
         [
             {
-                "image": "/design/Avenir-cover.JPG",
+                "image": "/design/Avenir-cover.jpg",
                 "title": "Avenir Cover"
             },
             {

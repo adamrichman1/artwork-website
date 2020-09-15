@@ -16,7 +16,7 @@ export default
           "id": "design"
       },
       {
-          "image": "/categories/digital.JPG",
+          "image": "/categories/digital.jpg",
           "title": "Photomontage",
           "id": "photomontage"
       }

@@ -61,6 +61,10 @@ export default
             {
                 "image": "/digital/pulpfiction2.jpg",
                 "title": "Pulp Fiction"
+            },
+            {
+                "image": "/digital/6fanart-2.jpg",
+                "title": "6 Fan Arts"
             }
         ],
         [

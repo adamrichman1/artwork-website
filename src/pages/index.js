@@ -17,7 +17,7 @@ function HomePage() {
         <div className={"overflow"}>
             <Properties/>
             <NavBar pageLinks={pages} artCategories={artCategories}/>
-            <HomeHeader image={"/banners/beach-banner.png"}/>
+            <HomeHeader image={"/banners/beach-banner-alt.jpg"}/>
             <HomeCategories artCategories={artCategories}/>
             <Footer contact={contact}/>
         </div>
